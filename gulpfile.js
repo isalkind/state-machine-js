@@ -92,7 +92,7 @@ gulp.task('connect', function() {
     browser: 'google chrome',
     server: {
       baseDir: './',
-      startPath: 'examples/index.html'
+      startPath: 'example/index.html'
     }
   });
 });
@@ -103,4 +103,4 @@ gulp.task('watch', function() {
 });
 
 // default
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', gulp.series('connect', 'watch'));

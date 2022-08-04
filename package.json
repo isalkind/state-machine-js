@@ -23,7 +23,7 @@
     "browserify": "^5.12.0",
     "chai": "^1.9.1",
     "chalk": "^0.5.1",
-    "gulp": "^3.8.8",
+    "gulp": "^4.0.2",
     "gulp-if": "^1.2.4",
     "gulp-jshint": "^1.8.4",
     "gulp-rename": "^1.2.0",
@@ -38,7 +38,10 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "mocha": "^1.21.4",
     "signals": "^1.0.0",
-    "vinyl-source-stream": "^1.0.0",
+    "vinyl-source-stream": "^2.0.0",
     "watchify": "^1.0.2"
+  },
+  "dependencies": {
+    "vinyl": "^2.2.1"
   }
 }

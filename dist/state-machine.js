@@ -65,6 +65,9 @@ StateMachine.prototype = {
 		if ( this._cancelled ) {
 			this._transitionComplete = true;
 			this._cancelled = false;
+
+			// Process action queue
+			this._processActionQueue();
 			return;
 		}
 
@@ -78,6 +81,9 @@ StateMachine.prototype = {
 		if ( this._cancelled ) {
 			this._transitionComplete = true;
 			this._cancelled = false;
+
+			// Process action queue
+			this._processActionQueue();
 			return;
 		}
 
